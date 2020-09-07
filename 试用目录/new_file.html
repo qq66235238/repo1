@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+		div{
+			border: 1px solid red;
+			display: flex;
+			flex-direction:column;
+			
+		}
+		#header-top{
+				display: inline-block;
+		
+		}
+		.header h1{
+			justify-content: center;
+			
+		}
+		.header-left{
+			float: left;
+		}
+		.header-right{
+			float: right;
+			flex-direction: row;
+			
+		}
+		
+		#article header{
+					border: 1px solid red;
+		}
+		#article section{
+						border: 1px solid red;
+		}
+		#article footer{
+						border: 1px solid red;
+		}
+		footer{
+						border: 1px solid red;
+		}
+		/*header p:nth-of-type(2){
+			border-radius:10px
+		}*/
+		header input{
+		border-radius:10px;	
+		width: 100px;
+		}
+		</style>
+	</head>
+	<body>
+		<div>
+			<header id="header-top">
+				<h1>DRESS</h1>
+				<div class="header-left">
+				<p>FREE DELIVERY</p>
+				</div>
+				<div class="header-right">
+					<input type="text"  value="">
+					<p>SIGN</p>
+					<p>CART</p>
+				</div>
+			</header>
+			<article id="article">
+				<header>2.1</header>
+				<section>2.2</section>
+				<footer>2.3</footer>
+			</article>
+			<footer>3</footer>
+		</div>
+		
+	</body>
+</html>

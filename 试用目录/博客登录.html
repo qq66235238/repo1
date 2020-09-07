@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			html,body{/*铺开背景的形势 获取网页的高度*/
+				height: 100%;
+			}
+			body{/*图片-不平铺-居中-大小*/
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				background: url(img/星空.jpg) no-repeat center/cover ;
+				
+			}
+			.login{
+				width: 18.75rem;
+				height: 18.75rem;
+				background-color: #ebf0f1;
+				border-radius: 8px;
+			}
+			.login:before{
+				display: block;
+				content: "";/*开启before*/
+				width: 100%;
+				height: 10px;
+				background-image: -webkit-linear-gradient(left,#27ae60 0%,#27ae60
+				20%,#8e44ad 20% ,#8e44ad 40%);
+				border-radius: 6px;
+			}
+			.header{
+				width: 100%;0000
+				height: 10px;
+				background-image: -webkit-linear-gradient(left,#27ae60 0%,#27ae60
+				20%,#8e44ad 20% ,#8e44ad 40%);
+				border-radius: 6px;
+			}
+			.title{
+				line-height: 80px;
+				text-align: center;
+				font-size: 2rem;/*手机自适应的单位*/
+				color: #096;
+			}
+			.login-content{
+				display: flex;
+				flex-direction: column; /*主轴方向：列*/
+				justify-content: space-around;/*主轴方向均分剩余空间*/
+				align-items: center;
+				height: 200px;
+				background: #009966;
+			}
+			.login-content input{
+				width: 80%;
+				height: 40px;
+				border: 1px solid #bbb;
+				border-radius: 5px;
+				text-indent: 1em;/*首行缩进*/
+				outline: none;/*默认点击边框*/
+			}
+			.login-content input[type="submit"]{
+				background-color: #e74c3c;
+				text-indent: 0em;
+				color: #fff;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="login">
+			<header></header>
+			<h2 class="title">Login</h2>
+			<form class="login-content"  action="" method="get">
+				<input type="text" name="user" placeholder="请输入用户名"/>
+				<input type="password" name="pwd" placeholder="请输入密码"/>
+				<input type="submit"  value="sign ln"/>
+			</form>
+		</div>
+	</body>
+</html>
